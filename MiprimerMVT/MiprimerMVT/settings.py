@@ -55,7 +55,7 @@ ROOT_URLCONF = 'MiprimerMVT.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ["Mi_primer_MVT/Plantillas/temple.html"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

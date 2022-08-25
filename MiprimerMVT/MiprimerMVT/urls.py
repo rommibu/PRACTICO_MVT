@@ -1,3 +1,4 @@
+
 """MiprimerMVT URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
@@ -15,12 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from AppMVT.views import Coberturasalud, Obrasocial, familia, trabajo
+from AppMVT.views import Cobertura_salud, familia_vinculo, trabajo_titular
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('Cobertura/', Coberturasalud),
-    path('Familia/', familia ),
-    path('InfoOS/', Obrasocial),
-    path('Trabajo/', trabajo)
+    path('Cobertura/', Cobertura_salud),
+    path('Familia/', familia_vinculo),
+    path('Trabajo/', trabajo_titular)
 ]

@@ -1,0 +1,25 @@
+{% extends "AppMVT/padre.html" %}
+
+{% load static %}
+
+{% block titulo_de_pagina %}
+<h1 class="mb-5">¡COBERTURAS SEGUN OBRA SOCIAL</h1>  
+{% endblock %}
+
+{% block contenido %} 
+
+<h1>contenido_de_cobertura</h1> 
+
+{% for cobertura in listado %}
+<h1>{{ Cobertura }}</h1>
+
+<div class="card mb-5">
+    <div class="card-body">
+        <h2 class="card-title">{{ Cobertura.denominacion }}</h2>
+        <p>class="card-text">{{ Cobertura.codigo }}</p>
+        <a href="{{ Cobertura }}" class="btn btn-primery">Ver mas</a>
+    </div>
+
+{% endfor %}
+
+{% endblock %}
